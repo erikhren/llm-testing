@@ -35,6 +35,24 @@ test = ["anyio[trio]", "blockbuster (>=1.5.23)", "coverage[toml] (>=7)", "except
 trio = ["trio (>=0.26.1)"]
 
 [[package]]
+name = "argh"
+version = "0.31.3"
+description = "Plain Python functions as CLI commands without boilerplate"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "argh-0.31.3-py3-none-any.whl", hash = "sha256:2edac856ff50126f6e47d884751328c9f466bacbbb6cbfdac322053d94705494"},
+    {file = "argh-0.31.3.tar.gz", hash = "sha256:f30023d8be14ca5ee6b1b3eeab829151d7bbda464ae07dc4dd5347919c5892f9"},
+]
+
+[package.extras]
+completion = ["argcomplete (>=2.0)"]
+docs = ["readthedocs-sphinx-search (==0.3.2)", "sphinx (>=7.2)", "sphinx-pyproject (==0.3)", "sphinx_rtd_theme (>=2.0)"]
+linters = ["pre-commit (>=3.4.0)"]
+test = ["pytest (>=7.4)", "pytest-cov (>=4.1)", "tox (>=4.11.3)"]
+
+[[package]]
 name = "certifi"
 version = "2025.1.31"
 description = "Python package for providing Mozilla's CA Bundle."
@@ -312,4 +330,4 @@ typing-extensions = ">=4.12.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "d0a55d70d20f70ba5555ae4dc0183f15e73b06a2eaba6d56130c168e31bbc3bd"
+content-hash = "465d3ab4e75893cba9b2f18f67c44fccea09133035f0e5647b85233350643970"

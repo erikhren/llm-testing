@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 ollama = "^0.4.7"
+argh = "^0.31.3"
 
 [tool.poetry.group.dev.dependencies]
 

@@ -16,7 +16,6 @@ ENV POETRY_NO_INTERACTION=1 \
 RUN pip install poetry==1.4.2 \
     && groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
-    #
     # [Optional] Add sudo support. Omit if you don't need to install software after connecting.
     && apt-get update \
     && apt-get install -y sudo git \
