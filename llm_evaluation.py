@@ -26,26 +26,27 @@ def evaluate(
         for c in context_data:
             context = c["context"]
 
-            formatted = format_prompt(prompt, context)
+            formatted_prompt = format_prompt(prompt, context)
 
             start_time = time.time()
-            output = run_test(model, formatted)
+            output = run_test(model, formatted_prompt)
             elapsed = round(time.time() - start_time, 2)
 
             results.append({
                 "Role": context["role"],
                 "Task": context["task"],
                 "Variant": context["variant"],
-                "Prompt": context["prompt"],
+                "Prompt": prompt,
+                "context": context,
                 "Response": output,
                 "Latency (s)": elapsed,
                 # "Mean VRAM Usage": "TBD",
-                "Quality": None,
-                "Accuracy": None,
-                "Format/Usefulness": None,
-                "Completeness": None,
-                "Consistency": None,
-                "Faithfulness": None,
+                "Quality": "",
+                "Accuracy": "",
+                "Format/Usefulness": "",
+                "Completeness": "",
+                "Consistency": "",
+                "Faithfulness": "",
                 "Notes": ""
             })
 
