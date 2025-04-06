@@ -1,0 +1,66 @@
+[
+    {
+        "role": "Cybersecurity Analyst",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "On March 12, 2024, Jane Smith (jsmith@company.local) reported unusual activity from her workstation (192.168.45.12). Investigation by IT personnel confirmed unauthorized SSH access from an external source. Logs show multiple login attempts using jsmith’s credentials.",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    },
+    {
+        "role": "Cybersecurity Analyst",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "Email received from hr@internal.org containing a spreadsheet attachment titled 'Employee_Salaries_2023.xlsx'. File was opened on workstation WS-DEV-14 by user amartinez. Antivirus flagged macros but allowed execution.",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    },
+    {
+        "role": "Cybersecurity Analyst",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "Dear John, your CompanyCorp account has been locked. Please verify your identity by clicking the link below. — IT Helpdesk (support@companycorp.com)",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    },
+    {
+        "role": "Cybersecurity Analyst",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "scp /home/alex/downloads/sensitive.txt alex@10.0.0.12:/mnt/backup/",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    },
+    {
+        "role": "Cybersecurity Analyst",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "[10:34 AM] Emily: I think Mike's machine (WIN-MIKE-LT) got hit last night. [10:35 AM] Raj: Yeah, I saw failed logins on 10.12.5.30 too.",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    },
+    {
+        "role": "Cybersecurity Analyst",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "ALERT: Unauthorized access detected on host CORP-APP01. User jdavis ran /opt/scripts/db_dump.sh at 03:17 UTC. Originating IP: 172.16.8.103.",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    },
+    {
+        "role": "Cybersecurity Analyst",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "Firewall logs show repeated connection attempts to port 3389 from external IP 203.0.113.78 targeting internal server TS01.internal.local. Attempts occurred over a 15-minute window starting at 01:43 UTC.",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    },
+    {
+        "role": "Cybersecurity Analyst",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "May 04 22:14:01 vpn01 openvpn[1122]: user john.doe connected from 192.168.100.42",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    }
+]
