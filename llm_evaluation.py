@@ -40,7 +40,7 @@ def evaluate(**kwargs):
                 "Task": context.task,
                 "Variant": context.variant,
                 "Prompt": prompt_string,
-                "context": context,
+                "context": context_str,
                 "Response": output,
                 "Latency (s)": elapsed,
                 # "Mean VRAM Usage": "TBD",
