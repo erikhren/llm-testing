@@ -22,6 +22,8 @@ def ensure_model_available(model: str):
         models_list = response[0]
     else:
         models_list = response
+
+    existing_models = [m.model for m in models_list]
         
     if model in existing_models:
         print(f"Model '{model}' is already available locally.")
