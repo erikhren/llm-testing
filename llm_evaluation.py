@@ -1,8 +1,8 @@
 from argh import arg, dispatch_commands
 import time
 
-from backend.types.llm_eval_types import EvalArgs
-from backend.util.eval_util import ensure_model_available, format_prompt, run_test
+from backend.types.llm_eval_types import Context, EvalArgs, Prompt
+from backend.util.eval_util import ensure_model_available, format_prompt, run_test, validate_data
 from backend.util.file_util import load_json, save_results
 
 
@@ -18,15 +18,17 @@ def evaluate(**kwargs):
 
     ensure_model_available(args.model)
 
-    prompt_data = load_json(PROMPTS)
-    context_data = load_json(CONTEXTS)
+    prompt_data_raw = load_json(PROMPTS)
+    context_data_raw = load_json(CONTEXTS)
+
+    prompt_data = validate_data(prompt_data_raw, Prompt, PROMPTS)
+    context_data = validate_data(context_data_raw, Context, CONTEXTS)
 
     for prompt in prompt_data:
-        prompt_string = prompt["prompt"]
+        prompt_string = prompt.prompt
 
         for context in context_data:
-            context_str = context["context"]
-
+            context_str = context.context
             formatted_prompt = format_prompt(prompt_string, context_str)
 
             start_time = time.time()
@@ -34,9 +36,9 @@ def evaluate(**kwargs):
             elapsed = round(time.time() - start_time, 2)
 
             results.append({
-                "Role": context["role"],
-                "Task": context["task"],
-                "Variant": context["variant"],
+                "Role": context.role,
+                "Task": context.task,
+                "Variant": context.variant,
                 "Prompt": prompt_string,
                 "context": context,
                 "Response": output,
