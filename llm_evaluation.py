@@ -30,7 +30,8 @@ def evaluate(**kwargs):
         for context in context_data:
             context_str = context.context
             formatted_prompt = format_prompt(prompt_string, context_str)
-
+            print("FORMATED PROMPT", formatted_prompt)
+            
             start_time = time.time()
             output = run_test(args.model, formatted_prompt)
             elapsed = round(time.time() - start_time, 2)
