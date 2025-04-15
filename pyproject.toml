@@ -2,7 +2,7 @@
 name = "llm testing"
 version = "0.1.0"
 description = "LLM evaluation scripts"
-authors = [""]
+authors = ["John Smith <john@example.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
