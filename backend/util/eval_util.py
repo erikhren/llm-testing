@@ -16,7 +16,13 @@ def run_test(model: str, prompt: str) -> str:
 def ensure_model_available(model: str):
     start_time = time.time()
 
-    existing_models = [m.model for m in ollama.list()]
+    response = ollama.list()
+
+    if isinstance(response, tuple):
+        models_list = response[0]
+    else:
+        models_list = response
+        
     if model in existing_models:
         print(f"Model '{model}' is already available locally.")
     else:
