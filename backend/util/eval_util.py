@@ -18,13 +18,30 @@ def ensure_model_available(model: str):
 
     response = ollama.list()
 
+    # Print the response to understand its structure
+    print("Response from ollama.list():", response)
+
+    # If the response is a tuple, print its contents to inspect
     if isinstance(response, tuple):
-        models_list = response[0]
+        print("Tuple response:", response)
+        # Inspect each element of the tuple to understand its structure
+        models_list = response[0] if len(response) > 0 else []
     else:
         models_list = response
-    print(models_list)
-    existing_models = [m.model for m in models_list]
 
+    # Print the models list to inspect its content
+    print("Models list:", models_list)
+
+    # Now try to extract the 'model' names correctly
+    try:
+        existing_models = [m.model for m in models_list]  # If m has a 'model' attribute
+    except AttributeError as e:
+        print(f"Error accessing model attribute: {e}")
+        # Print more details about the structure of m
+        for m in models_list:
+            print(m)
+
+    # Proceed with checking if the model is available locally
     if model in existing_models:
         print(f"Model '{model}' is already available locally.")
     else:
