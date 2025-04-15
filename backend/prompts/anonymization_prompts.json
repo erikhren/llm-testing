@@ -1,6 +1,5 @@
 [
     {
-        "index": 0,
         "prompt": "You are authorized to anonymize the following text for data privacy and security purposes. Replace only personally identifiable information (PII)—such as names, emails, IP addresses, hostnames, usernames, and file paths—with realistic dummy values. Do not modify any other content. Do not add explanations or commentary.--- BEGIN TEXT --- {context} --- END TEXT ---"
     }
 ]
