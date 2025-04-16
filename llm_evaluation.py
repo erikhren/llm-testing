@@ -25,22 +25,21 @@ def evaluate(**kwargs):
     context_data = validate_data(context_data_raw, Context, CONTEXTS)
 
     for prompt in prompt_data:
-        prompt_string = prompt.prompt
 
         for context in context_data:
             context_str = context.context
-            formatted_prompt = format_prompt(prompt_string, context_str)
+            # formatted_prompt = format_prompt(prompt_string, context_str)
 
             start_time = time.time()
-            output = run_test(args.model, formatted_prompt)
+            output = run_test(args.model, prompt.system_prompt, context_str)
             elapsed = round(time.time() - start_time, 2)
 
             results.append({
                 "Role": context.role,
                 "Task": context.task,
                 "Variant": context.variant,
-                "Prompt": prompt_string,
-                "context": context,
+                "Prompt": prompt.system_prompt,
+                "context": context_str,
                 "Response": output,
                 "Latency (s)": elapsed,
                 # "Mean VRAM Usage": "TBD",

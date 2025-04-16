@@ -3,13 +3,16 @@ from typing import Any, Dict, List, Type
 import ollama
 from pydantic import BaseModel, ValidationError
 
+from backend.types.llm_eval_types import Prompt
+
 
 def format_prompt(prompt: str, context: str) -> str:
     return prompt.format(context=context)
 
 
-def run_test(model: str, prompt: str) -> str:
-    msg = [{"role": "user", "content": prompt}]
+def run_test(model: str, prompt: Prompt, context: str) -> str:
+    msg = [{"role": "user", "content": prompt.system_prompt},
+           {"role": "user", "content": context}]
     response = ollama.chat(model=model, messages=msg)
     return response.message["content"]
 

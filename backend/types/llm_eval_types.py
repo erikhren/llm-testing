@@ -5,7 +5,7 @@ class EvalArgs(BaseModel):
     model: str
 
 class Prompt(BaseModel):
-    prompt: str
+    system_prompt: str
 
 class Context(BaseModel):
     role: str
