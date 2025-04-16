@@ -10,8 +10,8 @@ def format_prompt(prompt: str, context: str) -> str:
     return prompt.format(context=context)
 
 
-def run_test(model: str, prompt: Prompt, context: str) -> str:
-    msg = [{"role": "user", "content": prompt.system_prompt},
+def run_test(model: str, prompt: str, context: str) -> str:
+    msg = [{"role": "user", "content": prompt},
            {"role": "user", "content": context}]
     response = ollama.chat(model=model, messages=msg)
     return response.message["content"]
