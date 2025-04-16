@@ -1,8 +1,10 @@
 # llm-testing
 
 ## Requirements
+1. Install requirements (poetry or pip)
+`pip install -r requirements.txt`
 
-1. Install Ollama CLI & Server
+2. Install Ollama CLI & Server
 
 🐧 Linux (Debian/Ubuntu)
 `curl -fsSL https://ollama.com/install.sh | sh`
