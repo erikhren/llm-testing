@@ -9,8 +9,13 @@ readme = "README.md"
 python = "^3.11"
 ollama = "^0.4.7"
 argh = "^0.31.3"
+llama-index-readers-file = "^0.4.7"
+pymupdf = "^1.25.5"
+llama-index-llms-azure-openai = "^0.3.2"
+llama-index-llms-ollama = "^0.5.4"
 
 [tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]

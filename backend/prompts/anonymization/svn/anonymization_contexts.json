@@ -1,0 +1,18 @@
+[
+    {
+        "role": "Lawyer",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "6. člen (poslovna skrivnost) Vsebina te pogodbe in informacije izmenjane v zvezi z javnim naročilom so poslovna skrivnost, zato se pogodbeni stranki obvezujeta, da bosta vse informacije tehničnega in poslovnega značaja, do katerih imata dostop, vzajemno varovali kot varujeta svoje poslovne skrivnosti, vendar ne manj skrbno kot podobne poslovne skrivnosti varuje dober gospodarstvenik in v skladu z določbami Zakona o poslovni skrivnosti. Obveznost varovanja poslovne skrivnosti velja od dneva začetka pogajanj o vsebini te pogodbe in velja tudi po prenehanju veljavnosti pogodbe dokler podatki, ki so poslovna skrivnost, ne postanejo javno dostopni na zakonit način. Za poslovno skrivnost štejejo podatki, informacije, dokumentacija, izkušnje in know-how, ki se nanašajo na predmet pogodbe in za katere je očitno, da bi nastala občutna škoda, če bi zanje izvedela nepooblaščena oseba, zato osebe, ki imajo dostop do njih, v nobenem primeru ne smejo brez izrecnega dovoljenja pooblaščene osebe o tej dokumentaciji seznanjati ali obveščati drugih oseb, razen oseb, ki morajo biti z njo seznanjene po službeni dolžnosti, ali oseb, ki so za to pooblaščene s predpisi. Poslovne skrivnosti naročnika morajo varovati tudi delavci obeh pogodbenih strank in druge osebe, ki jih bosta pogodbeni stranki vključili v izvedbo del po tej pogodbi, ne glede na to na kakšen način so se z njim seznanili. Pogodbeni stranki se zavezujeta, da bosta svoje delavce in druge osebe, vključene v izvedbo dela po tej pogodbi, zavezali k varovanju poslovnih skrivnosti. Kontaktne osebe glede pogodbe so: Francka Zupančič; FZupancic@mju.si; 01 5342235",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    },
+    {
+        "role": "Lawyer",
+        "task": "Anomyzation",
+        "variant": "Well-written",
+        "context": "Najboljše podjetje d.o.o., Slovenska ulica 5, matična št.: 5434389000 (v nadaljevanju: »podizvajalec«) in TOP COMPANY LLC, Picadilly lane, 5 London, UK matična št.: 43524368uz (v nadaljevanju: »izvajalec«)",
+        "hardware": "RTX A 5000 | 24GB VRAM | 1GPU | 9vCPU",
+        "input_length": "<500"
+    }
+]

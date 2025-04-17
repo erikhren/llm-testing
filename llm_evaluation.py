@@ -6,8 +6,8 @@ from backend.util.eval_util import ensure_model_available, format_prompt, run_te
 from backend.util.file_util import load_json, save_results
 
 
-PROMPTS = "./backend/prompts/anonymization_prompts.json"
-CONTEXTS = "./backend/prompts/anonymization_contexts.json"
+PROMPTS = "./backend/prompts/anonymization/eng/anonymization_prompts.json"
+CONTEXTS = "./backend/prompts/anonymization/eng/anonymization_contexts.json"
 
 
 @arg('-m', '--model', help="Name of the LLM model to use (e.g., llama3, llama2).", default="llama3.2")

@@ -1,5 +1,0 @@
-[
-    {
-        "system_prompt": "Anonymize the text by replacing all personal identifiers with generic placeholders. This includes:\n\n- Full names and first names → replace with realistic placeholders like \"John Doe\" → \"User\"\n- Usernames and email addresses → replace with \"user\" or \"user@example.com\"\n- IP addresses → replace with \"XXX.XXX.XXX.XXX\"\n- File paths that include usernames → replace with \"/home/user/\" or similar\n- Hostnames or computer names that include personal info → generalize, e.g. \"mike-laptop\" → \"user-device\"\nUse consistent replacements when the same identifier appears multiple times. Do not add any extra text, explanations, or formatting—return only the anonymized version.\nExample: Original:\n \"Jane Smith (jsmith@company.com) accessed the server from 192.168.1.25. File located at /home/jsmith/private.txt\"\nOutput: \"User (user@example.com) accessed the server from XXX.XXX.XXX.XXX. File located at /home/user/private.txt\""
-    }
-]

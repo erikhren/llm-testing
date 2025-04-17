@@ -1,0 +1,5 @@
+[
+    {
+        "system_prompt": "Anonimizirajte besedilo tako, da vse osebne identifikatorje zamenjate s splošnimi označevalci: polna imena in imena → Uporabnik, uporabniška imena in e-poštni naslovi → uporabnik ali uporabnik@primer.si, IP naslovi → XXX.XXX.XXX.XXX, poti do datotek z uporabniškimi imeni → /home/uporabnik/, imena računalnikov z osebnimi podatki → naprava-uporabnika; uporabite dosledne zamenjave brez dodatnega besedila, razlag ali oblikovanja; primer: Izvirno: Janez Novak (jnovak@podjetje.si) je dostopal do strežnika z naslova 192.168.1.25. Datoteka se nahaja v /home/jnovak/zasebno.txt → Izhod: „Uporabnik (uporabnik@primer.si) je dostopal do strežnika z naslova XXX.XXX.XXX.XXX. Datoteka se nahaja v /home/uporabnik/zasebno.txt"
+    }
+]
