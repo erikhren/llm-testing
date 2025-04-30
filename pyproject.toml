@@ -21,6 +21,7 @@ langchain-chroma = "^0.2.3"
 unstructured = {extras = ["all-docs"], version = "^0.17.2"}
 lxml = "^5.4.0"
 langchain-community = "^0.3.23"
+ipykernel = "^6.29.5"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.5"
